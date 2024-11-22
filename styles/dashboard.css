@@ -133,20 +133,23 @@ header a{
     gap: 10px;
     align-items: center;
 }
-.arrows button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eee4;
-    border: none;
-    color: #fff;
-    font-family: monospace;
-    font-weight: bold;
-    transition: .5s;
+
+.icon-home {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.arrows button:hover{
-    background-color: #fff;
-    color: #000;
+
+.arrows i{
+    transition: .5s;
+    font-size: xx-large;
+    color: #eee4;
+}
+
+.arrows i:hover{
+    color: #fff;
 }
 
 .nlstitle {

@@ -6,14 +6,13 @@
     <title>Noelia Lago</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="" class="nlstitle">NLS</a>
-            <a href="">Sobre Mí</a>
-            <a href="">Contacto</a>
+            <a href="templates/contactme.html">Contacto</a>
             <a href="https://www.linkedin.com/in/noelia-lago-serrano-aaa882200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
             <a href="https://www.instagram.com/noelia__lago?igsh=eTd6ZnRhaWc5ampy" target="_blank"><i class="bi bi-instagram"></i></a>
         </nav>
@@ -24,12 +23,15 @@
         <!-- list item -->
         <div class="list">
             <div class="item">
-                <img src="assets/portada.jpg">
+                <img src="assets/video.jpg">
                 <div class="content">
                     <div class="title">Vídeo</div>
                     <div class="des">
-                        <!-- lorem 50 -->
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        <p>Exploro el poder de la narrativa visual a través del montaje y el etalonaje. Cada proyecto es una oportunidad para jugar con el ritmo, el color y la emoción, creando piezas que reflejan una visión única</p>
+                    </div>
+                    <div class="des">
+                        <i class="icon-home" style="background-image: url('assets/programs/davinci.png');"></i>
+                        <i class="icon-home" style="background-image: url('assets/programs/premiere.png');"></i>
                     </div>
                     <div class="buttons">
                         <button>Ver más</button>
@@ -41,7 +43,10 @@
                 <div class="content">
                     <div class="title">Fotografía</div>
                     <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        <p>Retratos, paisajes y escenas cinematográficas: cada imagen es una búsqueda por capturar momentos, emociones y atmósferas que cuentan su propia historia.</p>
+                    </div>
+                    <div class="des">
+                        <i class="icon-home" style="background-image: url('assets/programs/lightroom.png');"></i>
                     </div>
                     <div class="buttons">
                         <button>Ver más</button>
@@ -53,7 +58,7 @@
                 <div class="content">
                     <div class="title">VFX</div>
                     <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        <p>Combino composición digital, integración de cromas y modelos 3D creados por mí para construir efectos visuales impactantes. También utilizo motores de videojuegos para renderizar en tiempo real, llevando los límites del VFX a nuevas posibilidades.</p>
                     </div>
                     <div class="buttons">
                         <button>Ver más</button>
@@ -65,7 +70,7 @@
                 <div class="content">
                     <div class="title">3D</div>
                     <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        <p>Diseño y texturizo objetos y entornos hiperrealistas, pensando siempre en su integración perfecta para VFX, películas de animación o videojuegos. Cada detalle está creado para dar vida a mundos que parecen tan reales como imaginados.</p>
                     </div>
                     <div class="buttons">
                         <button>Ver más</button>
@@ -76,13 +81,10 @@
         <!-- list thumnail -->
         <div class="thumbnail">
             <div class="item">
-                <img src="assets/portada.jpg">
+                <img src="assets/video.jpg">
                 <div class="content">
                     <div class="title">
                         Vídeo
-                    </div>
-                    <div class="description">
-                        Description
                     </div>
                 </div>
             </div>
@@ -92,9 +94,6 @@
                     <div class="title">
                         Fotografía
                     </div>
-                    <div class="description">
-                        Description
-                    </div>
                 </div>
             </div>
             <div class="item">
@@ -102,9 +101,6 @@
                 <div class="content">
                     <div class="title">
                         VFX
-                    </div>
-                    <div class="description">
-                        Description
                     </div>
                 </div>
             </div>
@@ -114,22 +110,19 @@
                     <div class="title">
                         3D
                     </div>
-                    <div class="description">
-                        Description
-                    </div>
                 </div>
             </div>
         </div>
         <!-- next prev -->
 
         <div class="arrows">
-            <button id="prev"></button>
-            <button id="next"></button>
+            <i class="bi bi-arrow-left-circle-fill" id="prev"></i>
+            <i class="bi bi-arrow-right-circle-fill" id="next"></i>
         </div>
         <!-- time running -->
         <div class="time"></div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
