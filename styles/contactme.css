@@ -1,40 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
-a{
-    text-decoration: none;
+body {
+  background-color: #fcf3e3;
 }
 
-header{
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
+a {
+  text-decoration: none;
 }
 
-header a{
-    color: black;
-    margin-right: 40px;
+header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+header a {
+  color: black;
+  margin-right: 40px;
 }
 
 .nlstitle {
-    font-size: large;
-    font-weight: bold;
-  }
+  font-size: large;
+  font-weight: bold;
+}
 
 .container {
   position: relative;
   width: 100%;
   min-height: 90vh;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: #013d5a;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -54,7 +61,7 @@ header a{
 }
 
 .contact-form {
-  background-color: #969696;
+  background-color: #fcf3e3;
   position: relative;
 }
 
@@ -69,7 +76,7 @@ header a{
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #969696;
+  background-color: #fcf3e3;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -83,7 +90,7 @@ form {
 }
 
 .title {
-  color: #fff;
+  color: #333;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -123,7 +130,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: #333;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -138,10 +145,10 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
+  background-color: #333;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #969696;
+  color: #fcf3e3;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -151,7 +158,7 @@ textarea.input {
 }
 
 .btn:hover {
-  background-color: transparent;
+  background-color: #013D5A;
   color: #fff;
 }
 
@@ -175,7 +182,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #969696;
+  background-color: #fcf3e3;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -207,7 +214,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #969696;
+  color: #333;
 }
 
 .text {
@@ -245,7 +252,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #969696, #149279);
+  background: linear-gradient(45deg, #fcf3e3, #149279);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -262,7 +269,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #969696;
+  border: 22px solid #fcf3e3;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -274,7 +281,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #969696, #969696);
+  background: linear-gradient(to bottom, #fcf3e3, #fcf3e3);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -283,9 +290,9 @@ textarea.input {
 .big-circle:after {
   content: "";
   position: absolute;
+  background-color: #013d5a;
   width: 360px;
   height: 360px;
-  background-color: #fafafa;
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
@@ -298,6 +305,31 @@ textarea.input {
   left: 50%;
   transform: translate(181%, 11%);
   opacity: 0.2;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cv-download a {
+  margin-left: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.cv-download a:hover {
+  background-color: #013D5A;
+  text-decoration: none;
+}
+
+.cv-download i {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 850px) {
