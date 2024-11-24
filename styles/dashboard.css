@@ -160,8 +160,9 @@ header a {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 0.5em;
 }
 
 .arrows i {
