@@ -42,7 +42,6 @@ header a {
 
 .slider {
 	display: flex;
-	aspect-ratio: 16 / 9;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
@@ -60,7 +59,9 @@ header a {
 .slider img {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	object-fit: fill;
+	object-fit: contain;
+	max-width: 100%;
+    height: auto;
 }
 
 .slider-nav {
