@@ -230,6 +230,17 @@ textarea.input {
   font-size: 0.95rem;
 }
 
+.information a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.information a:hover{
+  color: #013D5A;
+}
+
 .icon {
   width: 28px;
   margin-right: 0.7rem;
